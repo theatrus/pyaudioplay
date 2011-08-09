@@ -1,0 +1,23 @@
+
+PyAudioPlay is a threaded Python audio player library. Allows you to play audio
+	from OGG Vorbis, MP3, AIFF, and WAV files in a seperate thread.
+
+For MP3 support, PyMad is required.
+For OGG Vorbis support, PyVorbis is required.
+
+pyao is always required (its our audio output library for now)
+
+
+
+There isn't much documentation right now. You'll probably have to
+	divine it out of the source. Sorry! :) I recommend looking	
+	at the pyaudioplay/player.py file, specificaly the end, where there are
+	some simple calling of load_file and play.
+
+Currently, no seeking can be done in the files. Audio files which 
+	are not 16 bits wide are not supported either (although its a quick fix).
+
+PyAudioPlay exists because of Shallot, a pure Python audio library manager and player,
+specificaly designed for embedded targets. Shallot doesn't have a release yet.
+
+
